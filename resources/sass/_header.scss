@@ -1,0 +1,44 @@
+header{
+  height: $header_height;
+  background-color: #f5f8fa;
+  .header-left, .header-right{
+    height: $header_height;
+    float: left;
+    width: 50%;
+  }
+  .header-left{
+    display: flex;
+    align-items: center;
+    img{
+      width: 200px;
+      height: 50px;
+    }
+  }
+  .header-right{
+    text-align: right;
+    .container_homepage{
+      display: inline-block;
+      line-height: $header_height;
+      padding: 0 20px;
+      a{
+        text-decoration: none;
+        color: #33475b;
+      }
+      /* per la casella input */
+      .input_search_movie{
+        width: 200px;
+        height: 30px;
+        margin: 0 10px;
+      }
+      /* per il bottone (link) 'Cerca' */
+      a.search{
+        text-decoration: none;
+        padding: 7px 20px;
+        color: white;
+        border-radius: 20px;
+        background-color: #33475b;
+        font-weight: bold;
+      }
+    }
+  }
+}
